@@ -86,7 +86,7 @@ export function Contact() {
                   <Github className="w-5 h-5 text-primary" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/sanchali-sarkar"
+                  href="https://www.linkedin.com/in/sanchali-sarkar-a0019834b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center hover:bg-accent/20 transition-colors backdrop-blur-sm"

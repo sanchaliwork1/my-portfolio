@@ -23,6 +23,15 @@ export function Hero() {
     document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const handleDownloadResume = () => {
+    const link = document.createElement("a")
+    link.href = "/resume.png"
+    link.download = "Sanchali_Sarkar_Resume.png"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section
       id="home"
@@ -57,12 +66,12 @@ export function Hero() {
           >
             View My Work
           </button>
-          <a
-            href="#"
+          <button
+            onClick={handleDownloadResume}
             className="px-8 py-3 rounded-full border-2 border-accent text-accent hover:bg-accent/10 font-semibold transition-all duration-300"
           >
             Download Resume
-          </a>
+          </button>
         </div>
 
         <div className="mt-16 flex justify-center gap-8">
@@ -75,7 +84,7 @@ export function Hero() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/sanchali-sarkar"
+            href="https://www.linkedin.com/in/sanchali-sarkar-a0019834b/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/50 hover:text-accent transition-colors"

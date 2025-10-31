@@ -49,7 +49,7 @@ export function BackgroundTransitions() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/70 to-background/80 dark:from-background/75 dark:via-background/80 dark:to-background/85"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/85 to-background/90 dark:from-background/85 dark:via-background/88 dark:to-background/92"></div>
     </div>
   )
 }
